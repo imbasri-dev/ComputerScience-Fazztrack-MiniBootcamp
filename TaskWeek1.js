@@ -51,3 +51,19 @@ let b = 400;
 
 /* [3] lalu keluarkan hasil dari assignment ke dalam console.log untuk mengetahui output ya   */
 console.log(`Check a:${a} , Check b:${b}`);
+
+// ============================================================
+
+// 3. buatlah bendera programmer menggunakan looping
+/*
+P = = = = = = = = P
+= R = = = = = = R =
+= = O = = = = O = =
+= = = G = = G = = =
+= = = = R R = = = =
+= = = = A A = = = =
+= = = M = = M = = =
+= = M = = = = M = =
+= E = = = = = = E =
+R = = = = = = = = R
+*/
