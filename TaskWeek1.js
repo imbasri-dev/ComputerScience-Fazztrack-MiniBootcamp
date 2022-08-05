@@ -67,3 +67,18 @@ P = = = = = = = = P
 = E = = = = = = E =
 R = = = = = = = = R
 */
+
+function loop() {
+  let word = ["P", "R", "O", "G", "R", "A", "M", "M", "E", "R"];
+  for (let i = 0; i < word.length; i++) {
+    for (let j = 0; j < word.length; j++) {
+      if (i == j || i == word.length - 1 - j) {
+        console.log(word[i]);
+      } else {
+        console.log("=");
+      }
+    }
+    console.log("\n");
+  }
+}
+console.log(loop());
