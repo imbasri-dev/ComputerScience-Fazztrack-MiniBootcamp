@@ -84,11 +84,11 @@ R = = = = = = = = R
 showTask.textContent = document.write("<br>");
 showTask.textContent = document.write("<br>");
 
-function loop() {
+function loop(word) {
   showTask.textContent = document.write("Task 1_3");
   showTask.textContent = document.write("<br>");
 
-  let word = ["P", "R", "O", "G", "R", "A", "M", "M", "E", "R"];
+  // let word = ["P", "R", "O", "G", "R", "A", "M", "M", "E", "R"];
   for (let i = 0; i < word.length; i++) {
     for (let j = 0; j < word.length; j++) {
       if (i == j || i == word.length - j - 1) {
@@ -100,4 +100,4 @@ function loop() {
     showTask.textContent = document.write("<br>");
   }
 }
-showTask.textContent = document.innerText = loop();
+showTask.textContent = document.innerText = loop("PROGRAMMER");
