@@ -4,7 +4,7 @@ let numbers = [2, 1, 0, 5, 6, 0];
 
 let numbers2 = [2, 1, 0, 5, 9, 0, 6, 0];
 // expected result : [2, 1,  5, 9, 6, 0, 0, 0]
-
+let showTask = document.getElementById("task1");
 // =============================Code Sebelum========================
 // function sortArrayZeroToEnd(arr) {
 //   const noZeroData = arr.filter((item) => {
@@ -20,6 +20,8 @@ let numbers2 = [2, 1, 0, 5, 9, 0, 6, 0];
 //   return noZeroData.concat(onlyZeroData);
 // }
 // =============================Code Sebelum========================
+showTask.textContent = document.write("Task 1_1");
+showTask.textContent = document.write("<br>");
 
 function sortArrayZeroToEnd(arr) {
   // karena menggunakan function bawaan filter JS , langsung saja menggunakan kondisi yang mereturn hasil kedalam variabel sesuai dengan kondisi zero dan onlyZero.
@@ -33,8 +35,19 @@ function sortArrayZeroToEnd(arr) {
 
 console.log("check :", sortArrayZeroToEnd(numbers)); // [2, 1, 5, 6, 0, 0]
 console.log("check :", sortArrayZeroToEnd(numbers2)); // [2, 1,  5, 9, 6, 0, 0, 0]
+showTask.textContent = document.write(
+  "check :",
+  sortArrayZeroToEnd(numbers),
+  "<br>"
+); // [2, 1, 5, 6, 0, 0]
+showTask.textContent = document.write("check :", sortArrayZeroToEnd(numbers2)); // [2, 1,  5, 9, 6, 0, 0, 0]
 
+showTask.textContent = document.write("<br>");
+showTask.textContent = document.write("<br>");
 // TASK 2
+showTask.textContent = document.write("Task 1_2");
+showTask.textContent = document.write("<br>");
+
 /*let a = 200
 let b = 400
 a -> b, b -> a (ini di swap)
@@ -51,7 +64,7 @@ let b = 400;
 
 /* [3] lalu keluarkan hasil dari assignment ke dalam console.log untuk mengetahui output ya   */
 console.log(`Check a:${a} , Check b:${b}`);
-
+showTask.textContent = document.write(`Check a:${a} , Check b:${b}`);
 // ============================================================
 
 // 3. buatlah bendera programmer menggunakan looping
@@ -68,17 +81,23 @@ P = = = = = = = = P
 R = = = = = = = = R
 */
 
+showTask.textContent = document.write("<br>");
+showTask.textContent = document.write("<br>");
+
 function loop() {
+  showTask.textContent = document.write("Task 1_3");
+  showTask.textContent = document.write("<br>");
+
   let word = ["P", "R", "O", "G", "R", "A", "M", "M", "E", "R"];
   for (let i = 0; i < word.length; i++) {
     for (let j = 0; j < word.length; j++) {
-      if (i == j || i == word.length - 1 - j) {
-        console.log(word[i]);
+      if (i == j || i == word.length - j - 1) {
+        showTask.textContent = document.write(word[i]);
       } else {
-        console.log("=");
+        showTask.textContent = document.write("=");
       }
     }
-    console.log("\n");
+    showTask.textContent = document.write("<br>");
   }
 }
-console.log(loop());
+showTask.textContent = document.innerText = loop();
